@@ -16,7 +16,7 @@ void mexFunction(int nlhs, mxArray *plhs[],int nrhs, const mxArray *prhs[])
   src = (uint32_t *) mxGetData(prhs[0]); 
   cmp = (uint32_t *) mxGetData(prhs[1]);
   
-  plhs[0] = mxCreateNumericMatrix(1,N1,mxUINT32_CLASS,0); 
+  plhs[0] = mxCreateNumericMatrix(1,N1,mxUINT32_CLASS,mxREAL); 
   dest=(uint32_t *) mxGetData(plhs[0]);
 
   unsigned int i,j,k;
