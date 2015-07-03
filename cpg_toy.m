@@ -89,7 +89,7 @@ close all;
 %   -   seqstr: Nucleotide sequence (as string of A, C, G, T characters)
 %   - startCpG: Start of CpG island
 %   -   endCpG: End of CpG island
-load('CpGIslandSearcher.mat');
+load('data/CpGIslandSearcher.mat');
 
 clear seqstr CpG;
 

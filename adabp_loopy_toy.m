@@ -1,8 +1,29 @@
 function [mu1, var1, mu2, var2] = adabp_loopy_toy()
+% function [mu1, var1, mu2, var2] = adabp_loopy_toy()
+% 
+% A small toy example of application of AdaBP to Gaussian loopy graphs.
+% 
+% OUTPUT
+% 
+%   mu1:  1xM  array  -  Marginal mean at point of interest v_l estimated
+%                        by naive method J^{-1}*h
+%  var1:  1xM  array  -  Marginal variance at point of interest v_l estimated
+%                        by inversion of full information matrix J^{-1}
+%   mu2:  1xM  array  -  Marginal mean at point of interest v_l estimated
+%                        by AdaBP
+%  var2:  1xM  array  -  Marginal variance at point of interest v_l estimated
+%                        by AdaBP
+% 
+% EXAMPLE
+%
+% [mu1, var1, mu2, var2] = adabp_loopy_toy();
+% 
+% Author: geopapa
+% $ Date: 2015/07/02 21:09:11 $
     N = 18;
     M = 1000;
     
-    [h, J] = form_h_J();
+    [h, J] = form_h_J(N);
 
     A = [4 9 11 13 14 15];  % anchor nodes
     A = A(:)';
@@ -187,7 +208,7 @@ function [mu1, var1, mu2, var2] = adabp_loopy_toy()
     axis tight;
 end
 
-function [h, J] = form_h_J()
+function [h, J] = form_h_J(N)
     h = ones(N,1);
     J = [1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0;
          1  2  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0;
