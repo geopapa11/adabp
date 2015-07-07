@@ -8,13 +8,13 @@ Adaptive Belief Propagation,
 ICML 2015.
 
 bibtex: <br>
-@inproceedings{ Geopapa2015adabp, <br>
-author = {Papachristoudis, Georgios and Fisher III, John W.}, <br>
-booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)}, <br>
-month = {April}, <br>
-title = {{On the Complexity of Information Planning in Gaussian Models}}, <br>
-url = {http://people.csail.mit.edu/geopapa/pubs/geopapaICASSP2015.pdf}, <br>
-year = {2015} <br>
+@inproceedings{ Geopapa2015adabp,<br>
+author = {Papachristoudis, Georgios and Fisher III, John W.},<br>
+booktitle = {International Conference on Machine Learning (ICML)},<br>
+month = {July},<br>
+title = {{Adaptive Belief Propagation}},<br>
+url = {http://jmlr.org/proceedings/papers/v37/papachristoudis15.pdf},<br>
+year = {2015}<br>
 }
 
 ## Getting Started
